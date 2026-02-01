@@ -1,0 +1,142 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T232644Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:26:44 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "a7fedacb2bfe1811"
+          ],
+          "X-Amz-Id-2": [
+            "aYs1i4mZ6ZMBjkTMfNDtkcTZgM5UwqDSA"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:26:44 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/nonexistent-key-12345",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T232644Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:26:44 GMT"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Content-Length": [
+            "137"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "399906c9d8572049"
+          ],
+          "X-Amz-Id-2": [
+            "aYsBi/GbDZDFjGjMrNFZk8TaxM7YwIDSt"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<Error>\n    <Code>NoSuchKey</Code>\n    <Message>Key not found</Message>\n</Error>\n"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:26:44 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

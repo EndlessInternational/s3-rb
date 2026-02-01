@@ -1,0 +1,872 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233100Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:00 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "45a0f656ddaa920e"
+          ],
+          "X-Amz-Id-2": [
+            "aYntibmYDZEJjyTOMNLVkvDaIMwMwfDTO"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:00 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file0.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content 0"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233100Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "b8964a0e9532f50af2da42593bb9acfeb7f7505f180b5d0611e7be216b82e1b1"
+          ],
+          "Content-Length": [
+            "9"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:00 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "fabdd625b383d15b"
+          ],
+          "X-Amz-Id-2": [
+            "aYmhiCmYyZNdjbzN1NCBkBzaBM5MwUDQm"
+          ],
+          "Etag": [
+            "\"75124565b2cb2e24c7310b6c39db40d2\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f4170e2f301403af1_d20260201_m233100_c005_v0501017_t0059_u01769988660916"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:00 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file1.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content 1"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233100Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "cd56d06409d269dbc1ace470081f1d32ed50906679b2bacfd4044348770493c4"
+          ],
+          "Content-Length": [
+            "9"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:01 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "3f64580736ec371a"
+          ],
+          "X-Amz-Id-2": [
+            "aYphiGWagZDdj9DOINFFkJjY/Mw4w5DRQ"
+          ],
+          "Etag": [
+            "\"81d6a1501eaff685ab50c7ff7d29d396\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f415ee42acc61191f_d20260201_m233101_c005_v0501027_t0049_u01769988661311"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:01 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file2.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content 2"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233101Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "1b8707533d362a48d03c920654cb5ac752445f17ca8255fe50e615e344edcd55"
+          ],
+          "Content-Length": [
+            "9"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:01 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "d94482c42f5b3609"
+          ],
+          "X-Amz-Id-2": [
+            "aYiRi22YhZBxjyjPgNMtk7jbWMyAwSjSd"
+          ],
+          "Etag": [
+            "\"96870b4c66a4a32bfc53a76c802bd30a\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f4138464d19452997_d20260201_m233101_c005_v0501029_t0010_u01769988661761"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:01 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file3.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content 3"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233101Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "d4e737c5336fcbf8a69550032d107520beb62e222a338591b004f09ba43ab857"
+          ],
+          "Content-Length": [
+            "9"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:02 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "78edd6b733d44f87"
+          ],
+          "X-Amz-Id-2": [
+            "aYvFi5GbzZGNjKDNTNLdkZTYvM5wwFzRD"
+          ],
+          "Etag": [
+            "\"e514979236a3b13cd9a4e81c43595f04\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f419397f97997f6cf_d20260201_m233102_c005_v0501024_t0022_u01769988662215"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:02 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file4.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content 4"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233102Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "0ef28ca6cbfb8d548a9a062aea2f5293f7d5ee7d057c1c98e1e0e98c042032ce"
+          ],
+          "Content-Length": [
+            "9"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:02 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "0781d23d476aa220"
+          ],
+          "X-Amz-Id-2": [
+            "aYv5ivWaYZDNjIzMDNDpk5zbJM+kwmzRY"
+          ],
+          "Etag": [
+            "\"eca63f5951b3aa23cba51ea0c31cb20a\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f4008400b75805d2d_d20260201_m233102_c005_v0501013_t0009_u01769988662992"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:02 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369?list-type=2&max-keys=2&prefix=list-max/1/",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233102Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:03 GMT"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Content-Length": [
+            "897"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "b32a961a869bc3b1"
+          ],
+          "X-Amz-Id-2": [
+            "aYmNiNWZHZChj/zOdNKdkqDbdM/wwDzTx"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<ListBucketResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n    <Contents>\n        <ETag>\"75124565b2cb2e24c7310b6c39db40d2\"</ETag>\n        <Key>list-max/1/file0.txt</Key>\n        <LastModified>2026-02-01T23:31:00.916Z</LastModified>\n        <Size>9</Size>\n        <StorageClass>STANDARD</StorageClass>\n    </Contents>\n    <Contents>\n        <ETag>\"81d6a1501eaff685ab50c7ff7d29d396\"</ETag>\n        <Key>list-max/1/file1.txt</Key>\n        <LastModified>2026-02-01T23:31:01.311Z</LastModified>\n        <Size>9</Size>\n        <StorageClass>STANDARD</StorageClass>\n    </Contents>\n    <IsTruncated>true</IsTruncated>\n    <MaxKeys>2</MaxKeys>\n    <Name>s3-rb-test-d4e4d369</Name>\n    <Prefix>list-max/1/</Prefix>\n    <KeyCount>2</KeyCount>\n    <NextContinuationToken>bGlzdC1tYXgvMS9maWxlMS50eHQ=</NextContinuationToken>\n</ListBucketResult>\n"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:03 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file0.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233103Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:03 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "6eec7ce429a59102"
+          ],
+          "X-Amz-Id-2": [
+            "aYjRie2ZBZKJjBDPaNIVkzjaxMwAwljRm"
+          ],
+          "X-Amz-Delete-Marker": [
+            "true"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f486d4ed515b4bc7e_d20260201_m233103_c005_v7007000_t0000_u01769988663679"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:03 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file1.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233103Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:04 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "0dac7c724dd2778a"
+          ],
+          "X-Amz-Id-2": [
+            "aYopiPmb1ZINjQjNTNFlkqTaxM28waDTi"
+          ],
+          "X-Amz-Delete-Marker": [
+            "true"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f480863b9d77f0b86_d20260201_m233104_c005_v7007000_t0000_u01769988664202"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:04 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file2.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233104Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:04 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "72af1170db129bd1"
+          ],
+          "X-Amz-Id-2": [
+            "aYrpiqmZLZEpjSjNLNJVkwDa3M3UwuTQl"
+          ],
+          "X-Amz-Delete-Marker": [
+            "true"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f431bb6e584a89843_d20260201_m233104_c005_v7007000_t0000_u01769988664550"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:04 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file3.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233104Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:04 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "5c66c449a4ecd65f"
+          ],
+          "X-Amz-Id-2": [
+            "aYpNiWGYrZJFjZTNINHpkSzYEM2wwXDSw"
+          ],
+          "X-Amz-Delete-Marker": [
+            "true"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f416cb63c073135c6_d20260201_m233104_c005_v7007000_t0000_u01769988664971"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:04 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/list-max/1/file4.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233104Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:31:05 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "8a183fa873f69855"
+          ],
+          "X-Amz-Id-2": [
+            "aYjNic2aOZFVjmjOrNJ9k4jYtM44wgDSA"
+          ],
+          "X-Amz-Delete-Marker": [
+            "true"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f485fd5dc2f47651d_d20260201_m233105_c005_v7007000_t0000_u01769988665417"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:31:05 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

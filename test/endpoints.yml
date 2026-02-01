@@ -1,0 +1,5 @@
+- name: dreamhost
+  endpoint: https://s3.us-east-005.dream.io
+
+- name: aws
+  region: us-east-1

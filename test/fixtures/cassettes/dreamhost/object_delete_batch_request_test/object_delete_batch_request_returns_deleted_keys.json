@@ -1,0 +1,300 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233054Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:54 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "bf0c5e72d9c9afd4"
+          ],
+          "X-Amz-Id-2": [
+            "aYpFiAWavZJxjWjPUNM9kszbDM2swXzRq"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:54 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/batch-keys/1/a.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "content"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233054Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73"
+          ],
+          "Content-Length": [
+            "7"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:54 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "b19c04c9466d0d1c"
+          ],
+          "X-Amz-Id-2": [
+            "aYqlieGYlZDVjyTOCNJdkKzZlM5owgTT6"
+          ],
+          "Etag": [
+            "\"9a0364b9e99bb480dd25e1f0284c8555\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f404dd0e10b143494_d20260201_m233054_c005_v0501004_t0041_u01769988654981"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:54 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/batch-keys/1/b.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "content"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233054Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "ed7002b439e9ac845f22357d822bac1444730fbdb6016d3ec9432297b9ec9f73"
+          ],
+          "Content-Length": [
+            "7"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:55 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "17238adc5667b988"
+          ],
+          "X-Amz-Id-2": [
+            "aYnliaWayZLdjKDNaNExkEzZlMzAwMzQP"
+          ],
+          "Etag": [
+            "\"9a0364b9e99bb480dd25e1f0284c8555\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f4094304e588ba904_d20260201_m233055_c005_v0501017_t0030_u01769988655397"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:55 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369?delete=",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Delete xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n  <Quiet>false</Quiet>\n  <Object><Key>batch-keys/1/a.txt</Key></Object><Object><Key>batch-keys/1/b.txt</Key></Object>\n</Delete>\n"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Content-Md5": [
+            "E8RBugql+5pAxuHUV5F4Nw=="
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233055Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "ba054d9f5d3096f5abab1f0057847f36de5f7b8948835d0f18dda6ec7c4f6926"
+          ],
+          "Content-Length": [
+            "224"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:55 GMT"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Content-Length": [
+            "663"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "8e3144006b89f8cd"
+          ],
+          "X-Amz-Id-2": [
+            "aYhVi/2YOZAtj+TMoNDxkRTaEMxAwQTSu"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DeleteResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n    <Deleted>\n        <DeleteMarker>true</DeleteMarker>\n        <DeleteMarkerVersionId>4_z6bdbef2d0c33148d96c30014_f43276d091c3a5d0f_d20260201_m233055_c005_v7007000_t0000_u01769988655767</DeleteMarkerVersionId>\n        <Key>batch-keys/1/b.txt</Key>\n    </Deleted>\n    <Deleted>\n        <DeleteMarker>true</DeleteMarker>\n        <DeleteMarkerVersionId>4_z6bdbef2d0c33148d96c30014_f43276d091c3a5d10_d20260201_m233055_c005_v7007000_t0000_u01769988655767</DeleteMarkerVersionId>\n        <Key>batch-keys/1/a.txt</Key>\n    </Deleted>\n</DeleteResult>\n"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:55 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

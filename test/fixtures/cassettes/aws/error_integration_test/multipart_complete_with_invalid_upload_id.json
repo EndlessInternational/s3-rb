@@ -1,0 +1,142 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233002Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "EOrLpFeQHPmq+QDvQzY3AzxfPjg84azS4sx1/YhqPfP1Doeag2ueBdKCWDI+g3IbvDi50MwiimI="
+          ],
+          "X-Amz-Request-Id": [
+            "NVRSNZAD807K0WB7"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:04 GMT"
+          ],
+          "X-Amz-Bucket-Region": [
+            "us-east-1"
+          ],
+          "X-Amz-Access-Point-Alias": [
+            "false"
+          ],
+          "X-Amz-Bucket-Arn": [
+            "arn:aws:s3:::s3-rb-test-ac68bbf9"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:02 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/test.txt?uploadId=invalid-upload-id-12345",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<CompleteMultipartUpload xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n  <Part><PartNumber>1</PartNumber><ETag>abc</ETag></Part>\n</CompleteMultipartUpload>\n"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233002Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "69370d20567f5f96cd35a99c545d24bfd76d51744b67859a84f570d36b5b8106"
+          ],
+          "Content-Length": [
+            "198"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "X-Amz-Request-Id": [
+            "NVRZM8JMQ6V7GN2K"
+          ],
+          "X-Amz-Id-2": [
+            "qtwGh9CKtRs3x3uGMbx5dNFmdrCJu85z6IrV/3fardn+iEnI4ETl3n6hlEPZTtSKV5lj/ufBIWg="
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:02 GMT"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<Error><Code>NoSuchUpload</Code><Message>The specified upload does not exist. The upload ID may be invalid, or the upload may have been aborted or completed.</Message><UploadId>invalid-upload-id-12345</UploadId><RequestId>NVRZM8JMQ6V7GN2K</RequestId><HostId>qtwGh9CKtRs3x3uGMbx5dNFmdrCJu85z6IrV/3fardn+iEnI4ETl3n6hlEPZTtSKV5lj/ufBIWg=</HostId></Error>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:03 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

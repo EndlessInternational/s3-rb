@@ -1,0 +1,297 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T232944Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:44 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "e94772c745b7c85b"
+          ],
+          "X-Amz-Id-2": [
+            "aYoRiPmb8ZGljEzPkNOhkdjZqM08w9zT1"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:44 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/stream-to-file/1",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to file"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T232944Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "20affddcfea58178a469f14f8127fe67df23da0562042be0a97d4c665755aee3"
+          ],
+          "Content-Length": [
+            "2500"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:44 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "df04175368d78331"
+          ],
+          "X-Amz-Id-2": [
+            "aYmJiyGZQZPBjPzNtNFlktDZBM/YwOzSV"
+          ],
+          "Etag": [
+            "\"7befd546bde08905b77d17ff21865fc9\""
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f106b15921cc07eec_d20260201_m232944_c005_v0501039_t0010_u01769988584787"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:44 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/stream-to-file/1",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T232944Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:45 GMT"
+          ],
+          "Content-Type": [
+            "binary/octet-stream"
+          ],
+          "Content-Length": [
+            "2500"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Last-Modified": [
+            "Sun, 01 Feb 2026 23:29:44 GMT"
+          ],
+          "Etag": [
+            "\"7befd546bde08905b77d17ff21865fc9\""
+          ],
+          "X-Amz-Request-Id": [
+            "404b0cf727849629"
+          ],
+          "X-Amz-Id-2": [
+            "aYoBixWahZHRjBjNdNK5kZjbaMxIw3TRV"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f106b15921cc07eec_d20260201_m232944_c005_v0501039_t0010_u01769988584787"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to file"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:45 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369/stream-to-file/1",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T232945Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:45 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "4463007611a729c8"
+          ],
+          "X-Amz-Id-2": [
+            "aYlBi2ma+ZKZjgTNaNN5k3TYrM5UwqTTR"
+          ],
+          "X-Amz-Delete-Marker": [
+            "true"
+          ],
+          "X-Amz-Version-Id": [
+            "4_z6bdbef2d0c33148d96c30014_f48853f3273e1d825_d20260201_m232945_c005_v7007000_t0000_u01769988585607"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:45 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

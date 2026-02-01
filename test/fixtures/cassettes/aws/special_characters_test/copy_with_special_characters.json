@@ -1,0 +1,401 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233036Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "OCNhoeDfGcBGXz9tmkhJ/1fGZ7Ahen/Y5hfIYZrl+Y5WFABLYeY+Y5sug7DdzrS9mRWR7LbR1zk2lcQcRH4qlYqiJoWXE59M"
+          ],
+          "X-Amz-Request-Id": [
+            "RZRV86B475350BVV"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:38 GMT"
+          ],
+          "X-Amz-Bucket-Region": [
+            "us-east-1"
+          ],
+          "X-Amz-Access-Point-Alias": [
+            "false"
+          ],
+          "X-Amz-Bucket-Arn": [
+            "arn:aws:s3:::s3-rb-test-ac68bbf9"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:37 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/special/3/source%20file+name.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "content to copy"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233037Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "4fede9da282a298265b6ead5bf7eb6d4acac097b9271d9fa09d659968ce6ddb6"
+          ],
+          "Content-Length": [
+            "15"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "on01p67AQ3zkDZTVqg6Eh70CTW+RWDsl4sH5vQiTKCM3o3j2IdzXIUZBOaSQ+DeQ1cito2k4nuKGu6Hckgc7LC9vt9sidHDx"
+          ],
+          "X-Amz-Request-Id": [
+            "RZRP42SYE6YW89Z0"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:38 GMT"
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Etag": [
+            "\"ab984321929ac13562518b62876bac9b\""
+          ],
+          "X-Amz-Checksum-Crc64nvme": [
+            "z3ZWQoIZP4M="
+          ],
+          "X-Amz-Checksum-Type": [
+            "FULL_OBJECT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:37 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/special/4/dest%20file&name.txt",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "X-Amz-Copy-Source": [
+            "/s3-rb-test-ac68bbf9/special/3/source%20file%2Bname.txt"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233037Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "ewnodUEsDTNFoBePTaHDqvWwmVE/grs946RBT+kYc7CUhxLu50ZhH9lS0Z7XhabV38iM9Ipxu3pag9RPXKa6HRkH/4907znf"
+          ],
+          "X-Amz-Request-Id": [
+            "RZRJCV5XKZMKRJG5"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:38 GMT"
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Content-Length": [
+            "275"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<CopyObjectResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><LastModified>2026-02-01T23:30:38.000Z</LastModified><ETag>\"ab984321929ac13562518b62876bac9b\"</ETag><ChecksumCRC64NVME>z3ZWQoIZP4M=</ChecksumCRC64NVME></CopyObjectResult>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:37 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/special/4/dest%20file&name.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233037Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "wu6K4G+C+y6eDJGmewjnsIEmboktJOZLnDCVL3qp7Uo5LZ3G3GAJJF62TeRxgkVB4AUuwwNpVyOocYhUFKOr6N2hWty/MSBX"
+          ],
+          "X-Amz-Request-Id": [
+            "BSFYZFV51JP4F1EW"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:39 GMT"
+          ],
+          "Last-Modified": [
+            "Sun, 01 Feb 2026 23:30:38 GMT"
+          ],
+          "Etag": [
+            "\"ab984321929ac13562518b62876bac9b\""
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Type": [
+            "binary/octet-stream"
+          ],
+          "Content-Length": [
+            "15"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "content to copy"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:37 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/special/3/source%20file+name.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233037Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": "No Content"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "xTHKNJPrYiMOBha0Z5rS8VJ59ZMZz+96TuT09xn/tMksxdC6nWxkxbCeN0SnSPNZEIKq2nt2f2A="
+          ],
+          "X-Amz-Request-Id": [
+            "BSFN7DTQ3XC5NQCJ"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:39 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:38 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/special/4/dest%20file&name.txt",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233038Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": "No Content"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "YUjHxRjTkJ+Gigjsi9pxn3q34HqO20k9NemCGsj7r0Vb7d24Z1clJRUYFgueRfj3x1hWZBGvT+s="
+          ],
+          "X-Amz-Request-Id": [
+            "BSFNZ1F8K23TZ5GD"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:39 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:38 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

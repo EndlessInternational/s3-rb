@@ -1,0 +1,374 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232802Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "YK/dGTaTC1zy9U0MEufN0TbvC/k3NKGeILlwS0FcRLWnHt+Zm18lwHdYGQKaFTWOBjLGgA5tKnE="
+          ],
+          "X-Amz-Request-Id": [
+            "796NSZT7Z9MN40FM"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:28:03 GMT"
+          ],
+          "X-Amz-Bucket-Region": [
+            "us-east-1"
+          ],
+          "X-Amz-Access-Point-Alias": [
+            "false"
+          ],
+          "X-Amz-Bucket-Arn": [
+            "arn:aws:s3:::s3-rb-test-ac68bbf9"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:28:02 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/multipart-list-1/3?uploads=",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232802Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "0RAHwOEHsRlLfws/S9IhdvWAHci+vnXRKt7TnTtyJ0/L8R/UpD+/rpfK6L4Lm9v/8jX+zf7L4iQ="
+          ],
+          "X-Amz-Request-Id": [
+            "X49J9KYNXKVB7Y1Z"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:28:04 GMT"
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<InitiateMultipartUploadResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Bucket>s3-rb-test-ac68bbf9</Bucket><Key>multipart-list-1/3</Key><UploadId>rPrnlS1Ej4UDvSOo6GYqIGfM7LZRv_EB4UVK3Wrq1npsuRmz7WRhfA2ObbaP5REqyVNsKPzZVgYQqSX28dZmQw--</UploadId></InitiateMultipartUploadResult>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:28:03 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/multipart-list-2/4?uploads=",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232803Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "5B9yjcofsYZW+4rVoXix3HGm/7bcscTSBpOpBJOVp+vmpIEUxOZOO0NrJdz4NknXEkP+StwAtuulsqIfEb6tvxvtX6qjCxZLBIPd1F5aVzk="
+          ],
+          "X-Amz-Request-Id": [
+            "X49VWGSPM8TFYW67"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:28:04 GMT"
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<InitiateMultipartUploadResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Bucket>s3-rb-test-ac68bbf9</Bucket><Key>multipart-list-2/4</Key><UploadId>z.mPdFRDopMUTt9N7Wl6cEFL3yP8gkiOd_TcrVcA7oUH_9zg026H48Z1badpLfOSYtR.e_7kKZHviZ5jy2ZgLg--</UploadId></InitiateMultipartUploadResult>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:28:03 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9?uploads=",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232803Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "j1xjH5ldrg52KgjmgoVmJbp58HAsLKYG3g3jCaV1jJbZdU6OuQWMiOpGaYJM8LoHFJiEK6+FoMkIUKtbsApMe3qOOgebxM8RhxapxBLBK4c="
+          ],
+          "X-Amz-Request-Id": [
+            "X49H615SN9RBSDHH"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:28:04 GMT"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListMultipartUploadsResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Bucket>s3-rb-test-ac68bbf9</Bucket><KeyMarker></KeyMarker><UploadIdMarker></UploadIdMarker><NextKeyMarker>multipart-list-2/4</NextKeyMarker><NextUploadIdMarker>z.mPdFRDopMUTt9N7Wl6cEFL3yP8gkiOd_TcrVcA7oUH_9zg026H48Z1badpLfOSYtR.e_7kKZHviZ5jy2ZgLg--</NextUploadIdMarker><MaxUploads>1000</MaxUploads><IsTruncated>false</IsTruncated><Upload><Key>multipart-list-1/3</Key><UploadId>rPrnlS1Ej4UDvSOo6GYqIGfM7LZRv_EB4UVK3Wrq1npsuRmz7WRhfA2ObbaP5REqyVNsKPzZVgYQqSX28dZmQw--</UploadId><Initiator><ID>b4e81edb7b71b17c5b393627c25110e92afdc6d4d4ba89f0d7db43005b8d1395</ID></Initiator><Owner><ID>b4e81edb7b71b17c5b393627c25110e92afdc6d4d4ba89f0d7db43005b8d1395</ID></Owner><StorageClass>STANDARD</StorageClass><Initiated>2026-02-01T23:28:04.000Z</Initiated></Upload><Upload><Key>multipart-list-2/4</Key><UploadId>z.mPdFRDopMUTt9N7Wl6cEFL3yP8gkiOd_TcrVcA7oUH_9zg026H48Z1badpLfOSYtR.e_7kKZHviZ5jy2ZgLg--</UploadId><Initiator><ID>b4e81edb7b71b17c5b393627c25110e92afdc6d4d4ba89f0d7db43005b8d1395</ID></Initiator><Owner><ID>b4e81edb7b71b17c5b393627c25110e92afdc6d4d4ba89f0d7db43005b8d1395</ID></Owner><StorageClass>STANDARD</StorageClass><Initiated>2026-02-01T23:28:04.000Z</Initiated></Upload></ListMultipartUploadsResult>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:28:03 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/multipart-list-1/3?uploadId=rPrnlS1Ej4UDvSOo6GYqIGfM7LZRv_EB4UVK3Wrq1npsuRmz7WRhfA2ObbaP5REqyVNsKPzZVgYQqSX28dZmQw--",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232803Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": "No Content"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "iBjZ/uT+jSWzLj+mIhH/fTSNUkySKWUwm3LMVCcX99+upR8pm7kOkFr5e/6ipYmfBBkc6xhra22pZZTVTuPuNSoF0Ff3OpeyJEqQ8HAFX2U="
+          ],
+          "X-Amz-Request-Id": [
+            "HMF3EF8HG7MXES5Y"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:28:05 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:28:04 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/multipart-list-2/4?uploadId=z.mPdFRDopMUTt9N7Wl6cEFL3yP8gkiOd_TcrVcA7oUH_9zg026H48Z1badpLfOSYtR.e_7kKZHviZ5jy2ZgLg--",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232804Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": "No Content"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "8sU7SuXrMnw6lPw07bXHBxVjW1SDw1tjLt7oZLP+48fjPaCCYPglR2wd0beGnU1Z1RfCAP8trcE="
+          ],
+          "X-Amz-Request-Id": [
+            "HMFEABWS8VQKTG82"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:28:05 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:28:04 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

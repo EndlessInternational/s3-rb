@@ -1,0 +1,142 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233057Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:57 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "94f78464a6c82ff4"
+          ],
+          "X-Amz-Id-2": [
+            "aYhNiI2YlZPFjdzPBNERkszaIM0YwQDQs"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:57 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-005.dream.io/",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233057Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:57 GMT"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Content-Length": [
+            "1479"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "c2f5e046271b535f"
+          ],
+          "X-Amz-Id-2": [
+            "aYnhizGbdZPJjbjP7NANk/TY9MxQwPDR8"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<ListAllMyBucketsResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n    <Owner>\n        <ID>bbfdc34d6304</ID>\n        <DisplayName></DisplayName>\n    </Owner>\n    <Buckets>\n        <Bucket>\n            <Name>archetype-test-bucket</Name>\n            <CreationDate>2026-01-31T17:05:25.723Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>benchmark-test-95ce24fb</Name>\n            <CreationDate>2026-02-01T00:33:10.396Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>s3-rb-temp-0afb075d0e31e633</Name>\n            <CreationDate>2026-02-01T23:29:57.074Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>s3-rb-temp-309840010d36e958</Name>\n            <CreationDate>2026-02-01T23:08:33.748Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>s3-rb-temp-67d687d47c566dd4</Name>\n            <CreationDate>2026-02-01T22:48:45.721Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>s3-rb-temp-a73a6cafb18e6d57</Name>\n            <CreationDate>2026-02-01T22:47:52.594Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>s3-rb-test-bucket</Name>\n            <CreationDate>2026-02-01T05:25:07.721Z</CreationDate>\n        </Bucket>\n        <Bucket>\n            <Name>s3-rb-test-d4e4d369</Name>\n            <CreationDate>2026-02-01T07:03:53.882Z</CreationDate>\n        </Bucket>\n    </Buckets>\n</ListAllMyBucketsResult>\n"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:57 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

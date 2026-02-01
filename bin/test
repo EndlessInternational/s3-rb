@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+vcr_mode = 'on'
+test_files = []
+
+ARGV.each_with_index do | arg, index |
+  if arg == '--vcr' && ARGV[ index + 1 ]
+    vcr_mode = ARGV[ index + 1 ]
+    ARGV.delete_at( index + 1 )
+    ARGV.delete_at( index )
+  elsif arg.end_with?( '_test.rb' )
+    test_files << arg
+  end
+end
+
+ENV[ 'VCR' ] = vcr_mode
+ARGV << '--verbose' unless ARGV.include?( '-v' )
+
+require 'bundler/setup'
+
+test_files = Dir[ 'test/**/*_test.rb' ] if test_files.empty?
+test_files.each { | f | require_relative "../#{ f }" }

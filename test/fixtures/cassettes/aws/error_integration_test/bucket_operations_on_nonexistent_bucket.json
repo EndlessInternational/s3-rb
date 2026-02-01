@@ -1,0 +1,197 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-nonexistent-bucket-d71aa7a3a56e07f9?list-type=2",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T224748Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "X-Amz-Request-Id": [
+            "AET5RS0JDXVJ5H2F"
+          ],
+          "X-Amz-Id-2": [
+            "ZIZRQseMcYihF29D6a4UwNZuWQGoSUVjiojKBjHvlxpjoI8oC23x0QhnJBudR1Xnyi06UOoupdvt08zfEFCM7TL8Vr7eNcV6"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 22:47:48 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>s3-rb-nonexistent-bucket-d71aa7a3a56e07f9</BucketName><RequestId>AET5RS0JDXVJ5H2F</RequestId><HostId>ZIZRQseMcYihF29D6a4UwNZuWQGoSUVjiojKBjHvlxpjoI8oC23x0QhnJBudR1Xnyi06UOoupdvt08zfEFCM7TL8Vr7eNcV6</HostId></Error>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 22:47:48 GMT"
+    },
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233001Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "5kyWjPONy3HLPbUg756e94mQNqZA8sTEDINNaYeybh5gQS28uUzO9rOBPaugx5JgAony7oAdVpk="
+          ],
+          "X-Amz-Request-Id": [
+            "QTJ898WV4ZQCQMB1"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:02 GMT"
+          ],
+          "X-Amz-Bucket-Region": [
+            "us-east-1"
+          ],
+          "X-Amz-Access-Point-Alias": [
+            "false"
+          ],
+          "X-Amz-Bucket-Arn": [
+            "arn:aws:s3:::s3-rb-test-ac68bbf9"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:01 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-nonexistent-bucket-test?list-type=2",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233001Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "X-Amz-Request-Id": [
+            "MF981ADNR8MVC15G"
+          ],
+          "X-Amz-Id-2": [
+            "Xd7l+MQImipFxpTHnkL3zLFxPepJLJuHI6iaS6nSkIItlSmyXgQ+XxG9GSY+O24WKCRCHNjw9p4="
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:01 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>s3-rb-nonexistent-bucket-test</BucketName><RequestId>MF981ADNR8MVC15G</RequestId><HostId>Xd7l+MQImipFxpTHnkL3zLFxPepJLJuHI6iaS6nSkIItlSmyXgQ+XxG9GSY+O24WKCRCHNjw9p4=</HostId></Error>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:02 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

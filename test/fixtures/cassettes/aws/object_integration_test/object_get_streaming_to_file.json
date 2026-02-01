@@ -1,0 +1,276 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232945Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "nRXILq0180807lqDpQAE42L/pSXlgzCe/1GZsitLvIGzBIHxZwOZbVzGR857lDLJLkstWdO3xkfsaEF726M6HSpX9TYXg+oU"
+          ],
+          "X-Amz-Request-Id": [
+            "AX0TJGJWNDNER5AD"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:46 GMT"
+          ],
+          "X-Amz-Bucket-Region": [
+            "us-east-1"
+          ],
+          "X-Amz-Access-Point-Alias": [
+            "false"
+          ],
+          "X-Amz-Bucket-Arn": [
+            "arn:aws:s3:::s3-rb-test-ac68bbf9"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:45 GMT"
+    },
+    {
+      "request": {
+        "method": "put",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/stream-to-file/2",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to file"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232945Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "20affddcfea58178a469f14f8127fe67df23da0562042be0a97d4c665755aee3"
+          ],
+          "Content-Length": [
+            "2500"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "ZtiaH9TJFus7wdFVcjxmlIi+kWn2iultN4BJtxF4HVP+CkQlivl2NnkzKrnJ3CCMhxHn4ZfnpwTpaGm9UzFJLXDzJz8isfmD"
+          ],
+          "X-Amz-Request-Id": [
+            "HAE2GPV5K47Y260K"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:47 GMT"
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Etag": [
+            "\"7befd546bde08905b77d17ff21865fc9\""
+          ],
+          "X-Amz-Checksum-Crc64nvme": [
+            "2yMZdeIpV3s="
+          ],
+          "X-Amz-Checksum-Type": [
+            "FULL_OBJECT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:46 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/stream-to-file/2",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232946Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "70yh6F0fUWdkOKWzRCphDAt9sim3oqoBnEnl684FlvrnKnsLBUOTcdcigWiCM+ln3POSZAI3+LIVcVgbRmCBJKkhHW6tR/Qj"
+          ],
+          "X-Amz-Request-Id": [
+            "HAE5RJZ67K2TW81A"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:47 GMT"
+          ],
+          "Last-Modified": [
+            "Sun, 01 Feb 2026 23:29:47 GMT"
+          ],
+          "Etag": [
+            "\"7befd546bde08905b77d17ff21865fc9\""
+          ],
+          "X-Amz-Server-Side-Encryption": [
+            "AES256"
+          ],
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Type": [
+            "binary/octet-stream"
+          ],
+          "Content-Length": [
+            "2500"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "Content to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to fileContent to stream to file"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:46 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9/stream-to-file/2",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T232946Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 204,
+          "message": "No Content"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "ZmM3Bx5+q5WLOLa/0j6v6ztTa4B87vWoEQ6mOW3LTnpVPjDVYEjAX0B+f6Kk+grKzmt0HWngCMA="
+          ],
+          "X-Amz-Request-Id": [
+            "61PCCKNB05NDZH9X"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:29:48 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:29:47 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

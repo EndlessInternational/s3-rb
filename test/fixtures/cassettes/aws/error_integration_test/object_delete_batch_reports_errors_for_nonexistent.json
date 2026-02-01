@@ -1,0 +1,145 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233006Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "eoxxfoUzzN/eaX+lnTb4+0mLjI+04fNd1+8mUVqBR9vsqQwaVumCyP0QoRgl6can365QiuwO/W8="
+          ],
+          "X-Amz-Request-Id": [
+            "2708YJATVGZ3ZDV3"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:08 GMT"
+          ],
+          "X-Amz-Bucket-Region": [
+            "us-east-1"
+          ],
+          "X-Amz-Access-Point-Alias": [
+            "false"
+          ],
+          "X-Amz-Bucket-Arn": [
+            "arn:aws:s3:::s3-rb-test-ac68bbf9"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:07 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://s3.us-east-1.amazonaws.com/s3-rb-test-ac68bbf9?delete=",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Delete xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n  <Quiet>false</Quiet>\n  <Object><Key>nonexistent-1</Key></Object><Object><Key>nonexistent-2</Key></Object>\n</Delete>\n"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Content-Md5": [
+            "+WI0+t0bmBtdlRPIcLtxDQ=="
+          ],
+          "Host": [
+            "s3.us-east-1.amazonaws.com"
+          ],
+          "X-Amz-Date": [
+            "20260201T233007Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "1675066b9c86002d1917f97e61d876f69e72de80647eac0001095e724e754116"
+          ],
+          "Content-Length": [
+            "214"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Amz-Id-2": [
+            "ViL+7Z7/2ohuVlyNjf50gYsT8DoULJTE+UOCLRnFOQ1hH8EYhOnYVQvwYCSqqndm4SyDS5btrLs="
+          ],
+          "X-Amz-Request-Id": [
+            "270B06HQDG1846PG"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:08 GMT"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Server": [
+            "AmazonS3"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<DeleteResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Deleted><Key>nonexistent-2</Key></Deleted><Deleted><Key>nonexistent-1</Key></Deleted></DeleteResult>"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:07 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}

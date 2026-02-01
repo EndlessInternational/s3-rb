@@ -1,0 +1,148 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "head",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233006Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:06 GMT"
+          ],
+          "Content-Length": [
+            "0"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "56c37843f18df4a2"
+          ],
+          "X-Amz-Id-2": [
+            "aYtNiUWaBZGBjZTO5NKJk7jasM5gwzjRC"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:06 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://s3.us-east-005.dream.io/s3-rb-test-d4e4d369?delete=",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Delete xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n  <Quiet>false</Quiet>\n  <Object><Key>nonexistent-1</Key></Object><Object><Key>nonexistent-2</Key></Object>\n</Delete>\n"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.14.0"
+          ],
+          "Content-Md5": [
+            "+WI0+t0bmBtdlRPIcLtxDQ=="
+          ],
+          "Host": [
+            "s3.us-east-005.dream.io"
+          ],
+          "X-Amz-Date": [
+            "20260201T233006Z"
+          ],
+          "X-Amz-Content-Sha256": [
+            "1675066b9c86002d1917f97e61d876f69e72de80647eac0001095e724e754116"
+          ],
+          "Content-Length": [
+            "214"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": ""
+        },
+        "headers": {
+          "Server": [
+            "nginx"
+          ],
+          "Date": [
+            "Sun, 01 Feb 2026 23:30:06 GMT"
+          ],
+          "Content-Type": [
+            "application/xml"
+          ],
+          "Content-Length": [
+            "653"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Amz-Request-Id": [
+            "65d8753f46190416"
+          ],
+          "X-Amz-Id-2": [
+            "aYmZidWaVZG1jeTOQNF9kdjYCMz0wZDSQ"
+          ],
+          "Cache-Control": [
+            "max-age=0, no-cache, no-store"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=63072000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<DeleteResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">\n    <Deleted>\n        <DeleteMarker>true</DeleteMarker>\n        <DeleteMarkerVersionId>4_z6bdbef2d0c33148d96c30014_f453d0cf1350cc2e0_d20260201_m233006_c005_v7007000_t0000_u01769988606786</DeleteMarkerVersionId>\n        <Key>nonexistent-1</Key>\n    </Deleted>\n    <Deleted>\n        <DeleteMarker>true</DeleteMarker>\n        <DeleteMarkerVersionId>4_z6bdbef2d0c33148d96c30014_f453d0cf1350cc2df_d20260201_m233006_c005_v7007000_t0000_u01769988606786</DeleteMarkerVersionId>\n        <Key>nonexistent-2</Key>\n    </Deleted>\n</DeleteResult>\n"
+        }
+      },
+      "recorded_at": "Sun, 01 Feb 2026 23:30:06 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.4.0"
+}
