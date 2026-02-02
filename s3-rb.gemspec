@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.summary          = "A lightweight, low dependency, high performance, 'bare metal' S3 API " \
                           "gem."
   spec.description      = "A lightweight, low dependency, high performance S3 API gem with minimal " \
-                          "abstraction for interfacing with S3 compatible storage services" \ 
+                          "abstraction for interfacing with S3 compatible storage services " \
                           "including AWS S3."
   spec.homepage         = 'https://github.com/EndlessInternational/s3-rb'
   spec.license          = 'MIT'
