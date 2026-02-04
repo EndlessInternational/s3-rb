@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    s3-rb (0.1.0)
+    s3-rb (1.1.0)
       dynamicschema (~> 2.0)
       faraday (~> 2.0)
       faraday-net_http_persistent (~> 2.0)
