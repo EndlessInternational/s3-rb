@@ -4,17 +4,12 @@ This is a lightweight, low dependency, high performance, high compatibility, 'ba
 
 I chose to make this implementation 'bare metal' in that there is minimal abstraction layer atop the S3 API - not even an iterator for the object list. You are then free to build your own abstraction best suited to the semantics of your application or gem.
 
-At its most basic the implementation provides a request class per operation which returns a result structure. In some cases, for operations with many parameters, there is an options structure you can build. The operation is executed by 'submitting' an instance of the request.
+At its most basic the implementation provides a request class per operation which returns a result structure. The operation is executed by 'submitting' an instance of the request with required parameters and optional keyword arguments.
 
 ```ruby
 require 's3'
 
-# build the options for the put operation
-options = S3::ObjectPutOptions.build( content_type: 'text/plain',
-                                      acl: :public_read,
-                                      storage_class: :standard_ia )
-
-# create the request and submit it
+# create the request and submit it with keyword arguments
 request = S3::ObjectPutRequest.new( access_key_id: 'AKIA...',
                                     secret_access_key: '...',
                                     region: 'us-east-1' )
@@ -22,7 +17,9 @@ request = S3::ObjectPutRequest.new( access_key_id: 'AKIA...',
 response = request.submit( bucket: 'my-bucket',
                            key: 'hello.txt',
                            body: 'Hello, World!',
-                           options: options )
+                           content_type: 'text/plain',
+                           acl: :public_read,
+                           storage_class: :standard_ia )
 
 # check for success and read the result
 if response.success?
@@ -32,6 +29,32 @@ else
   result = response.result
   puts "error: #{ result.error_code } - #{ result.error_description }"
 end
+```
+
+Alternatively, you can build an options structure and pass it as the first positional argument or as the `options:` keyword argument:
+
+```ruby
+# build the options for the put operation
+options = S3::ObjectPutOptions.build( content_type: 'text/plain',
+                                      acl: :public_read,
+                                      storage_class: :standard_ia )
+
+# as first positional argument
+response = request.submit( options, bucket: 'my-bucket',
+                                    key: 'hello.txt',
+                                    body: 'Hello, World!' )
+
+# or as keyword argument
+response = request.submit( bucket: 'my-bucket',
+                           key: 'hello.txt',
+                           body: 'Hello, World!',
+                           options: options )
+
+# options can also be a Hash
+response = request.submit( bucket: 'my-bucket',
+                           key: 'hello.txt',
+                           body: 'Hello, World!',
+                           options: { content_type: 'text/plain', acl: :public_read } )
 ```
 
 The operation methods - similar to those in the AWS gem - then create a matching request object with the given arguments and submit a request, typically returning the same result structure.

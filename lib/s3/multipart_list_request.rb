@@ -1,13 +1,15 @@
 module S3
   class MultipartListRequest < Request
-    def submit( bucket:, prefix: nil, key_marker: nil, upload_id_marker: nil, max_uploads: nil )
+    def submit( options = nil, bucket:, **kwargs )
       path = "/#{ bucket }"
 
+      options = merge_options( options, kwargs, MultipartListOptions )
+
       params = { 'uploads' => '' }
-      params[ 'prefix' ] = prefix if prefix
-      params[ 'key-marker' ] = key_marker if key_marker
-      params[ 'upload-id-marker' ] = upload_id_marker if upload_id_marker
-      params[ 'max-uploads' ] = max_uploads.to_s if max_uploads
+      params[ 'prefix' ] = options[ :prefix ] if options[ :prefix ]
+      params[ 'key-marker' ] = options[ :key_marker ] if options[ :key_marker ]
+      params[ 'upload-id-marker' ] = options[ :upload_id_marker ] if options[ :upload_id_marker ]
+      params[ 'max-uploads' ] = options[ :max_uploads ].to_s if options[ :max_uploads ]
 
       query = Helpers.build_query_string( params )
 

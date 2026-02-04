@@ -163,5 +163,16 @@ module S3
         faraday.options.timeout = 300
       end
     end
+
+    def merge_options( options, kwargs, options_class )
+      # support options as positional arg, keyword arg, or both (merged)
+      # precedence: positional < options: kwarg < other kwargs
+      kwargs_options = kwargs.delete( :options )
+      options = options.is_a?( Hash ) ? options_class.build( options ) : options
+      kwargs_options = kwargs_options.is_a?( Hash ) ? options_class.build( kwargs_options ) : kwargs_options
+      ( options&.to_h || {} )
+        .merge( kwargs_options&.to_h || {} )
+        .merge( options_class.build( kwargs ).to_h )
+    end
   end
 end

@@ -1,15 +1,8 @@
 module S3
   module MultipartMethods
-    def multipart_create( bucket:, key:, metadata: nil, content_type: nil, acl: nil, storage_class: nil )
+    def multipart_create( options = nil, bucket:, key:, **kwargs )
       request = MultipartCreateRequest.new( **request_options )
-      response = request.submit(
-        bucket: bucket,
-        key: key,
-        metadata: metadata,
-        content_type: content_type,
-        acl: acl,
-        storage_class: storage_class
-      )
+      response = request.submit( options, bucket: bucket, key: key, **kwargs )
 
       raise_if_error( response )
 
@@ -54,30 +47,18 @@ module S3
       response.result
     end
 
-    def multipart_list( bucket:, prefix: nil, key_marker: nil, upload_id_marker: nil, max_uploads: nil )
+    def multipart_list( options = nil, bucket:, **kwargs )
       request = MultipartListRequest.new( **request_options )
-      response = request.submit(
-        bucket: bucket,
-        prefix: prefix,
-        key_marker: key_marker,
-        upload_id_marker: upload_id_marker,
-        max_uploads: max_uploads
-      )
+      response = request.submit( options, bucket: bucket, **kwargs )
 
       raise_if_error( response )
 
       response.result
     end
 
-    def multipart_parts( bucket:, key:, upload_id:, part_number_marker: nil, max_parts: nil )
+    def multipart_parts( options = nil, bucket:, key:, upload_id:, **kwargs )
       request = MultipartPartsRequest.new( **request_options )
-      response = request.submit(
-        bucket: bucket,
-        key: key,
-        upload_id: upload_id,
-        part_number_marker: part_number_marker,
-        max_parts: max_parts
-      )
+      response = request.submit( options, bucket: bucket, key: key, upload_id: upload_id, **kwargs )
 
       raise_if_error( response )
 

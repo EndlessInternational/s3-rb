@@ -2,13 +2,15 @@ module S3
   class PresignGetRequest < Request
     DEFAULT_EXPIRES_IN = 3600
 
-    def submit( bucket:, key:, expires_in: nil, response_content_type: nil, response_content_disposition: nil )
-      expires_in ||= DEFAULT_EXPIRES_IN
+    def submit( options = nil, bucket:, key:, **kwargs )
+      options = merge_options( options, kwargs, PresignGetOptions )
+
+      expires_in = options[ :expires_in ] || DEFAULT_EXPIRES_IN
       path = "/#{ bucket }/#{ Helpers.encode_key( key ) }"
 
       generate_presigned_url( :get, path, expires_in: expires_in,
-                              response_content_type: response_content_type,
-                              response_content_disposition: response_content_disposition )
+                              response_content_type: options[ :response_content_type ],
+                              response_content_disposition: options[ :response_content_disposition ] )
     end
 
     private

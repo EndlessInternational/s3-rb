@@ -13,6 +13,7 @@ module S3
     ].freeze
 
     schema do
+      metadata            Hash
       content_type        String
       acl                 [ String, Symbol ], normalize: ->( v ) { v.to_s.downcase.tr( '_', '-' ) }
       storage_class       [ String, Symbol ], normalize: ->( v ) { v.to_s.upcase.tr( '-', '_' ) }

@@ -1,20 +1,19 @@
 module S3
   class ObjectCopyRequest < Request
-    def submit( source_bucket:, source_key:, bucket:, key:, metadata: nil, options: nil )
+    def submit( options = nil, source_bucket:, source_key:, bucket:, key:, **kwargs )
       path = "/#{ bucket }/#{ Helpers.encode_key( key ) }"
 
       source = "/#{ source_bucket }/#{ Helpers.encode_key( source_key ) }"
 
+      options = merge_options( options, kwargs, ObjectCopyOptions )
+
       headers = { 'x-amz-copy-source' => source }
+      headers[ 'x-amz-metadata-directive' ] = options[ :metadata_directive ] if options[ :metadata_directive ]
+      headers[ 'x-amz-storage-class' ] = options[ :storage_class ] if options[ :storage_class ]
+      headers[ 'x-amz-acl' ] = options[ :acl ] if options[ :acl ]
+      headers[ 'Content-Type' ] = options[ :content_type ] if options[ :content_type ]
 
-      if options
-        headers[ 'x-amz-metadata-directive' ] = options[ :metadata_directive ] if options[ :metadata_directive ]
-        headers[ 'x-amz-storage-class' ] = options[ :storage_class ] if options[ :storage_class ]
-        headers[ 'x-amz-acl' ] = options[ :acl ] if options[ :acl ]
-        headers[ 'Content-Type' ] = options[ :content_type ] if options[ :content_type ]
-      end
-
-      metadata&.each do | meta_key, value |
+      options[ :metadata ]&.each do | meta_key, value |
         headers[ "x-amz-meta-#{ meta_key }" ] = value.to_s
       end
 

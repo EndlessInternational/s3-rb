@@ -2,11 +2,13 @@ module S3
   class PresignPutRequest < Request
     DEFAULT_EXPIRES_IN = 3600
 
-    def submit( bucket:, key:, expires_in: nil, content_type: nil )
-      expires_in ||= DEFAULT_EXPIRES_IN
+    def submit( options = nil, bucket:, key:, **kwargs )
+      options = merge_options( options, kwargs, PresignPutOptions )
+
+      expires_in = options[ :expires_in ] || DEFAULT_EXPIRES_IN
       path = "/#{ bucket }/#{ Helpers.encode_key( key ) }"
 
-      generate_presigned_url( :put, path, expires_in: expires_in, content_type: content_type )
+      generate_presigned_url( :put, path, expires_in: expires_in, content_type: options[ :content_type ] )
     end
 
     private

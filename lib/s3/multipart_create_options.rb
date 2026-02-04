@@ -1,8 +1,6 @@
 module S3
-  class ObjectCopyOptions
+  class MultipartCreateOptions
     include SchemaOptions
-
-    METADATA_DIRECTIVES = %w[ COPY REPLACE ].freeze
 
     STORAGE_CLASSES = %w[
       STANDARD REDUCED_REDUNDANCY STANDARD_IA ONEZONE_IA
@@ -16,10 +14,9 @@ module S3
 
     schema do
       metadata            Hash
-      metadata_directive  [ String, Symbol ], normalize: ->( v ) { v.to_s.upcase }
-      storage_class       [ String, Symbol ], normalize: ->( v ) { v.to_s.upcase.tr( '-', '_' ) }
-      acl                 [ String, Symbol ], normalize: ->( v ) { v.to_s.downcase.tr( '_', '-' ) }
       content_type        String
+      acl                 [ String, Symbol ], normalize: ->( v ) { v.to_s.downcase.tr( '_', '-' ) }
+      storage_class       [ String, Symbol ], normalize: ->( v ) { v.to_s.upcase.tr( '-', '_' ) }
     end
   end
 end

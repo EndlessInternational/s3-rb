@@ -1,11 +1,13 @@
 module S3
   class BucketCreateRequest < Request
-    def submit( bucket:, region: nil, acl: nil )
+    def submit( options = nil, bucket:, **kwargs )
+      options = merge_options( options, kwargs, BucketCreateOptions )
+
       headers = {}
-      headers[ 'x-amz-acl' ] = acl if acl
+      headers[ 'x-amz-acl' ] = options[ :acl ] if options[ :acl ]
 
       body = nil
-      location = region || @region
+      location = options[ :region ] || @region
 
       if location && location != 'us-east-1'
         body = <<~XML

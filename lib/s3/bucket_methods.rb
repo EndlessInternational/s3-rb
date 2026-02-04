@@ -9,9 +9,9 @@ module S3
       response.result
     end
 
-    def bucket_create( bucket:, region: nil, acl: nil )
+    def bucket_create( options = nil, bucket:, **kwargs )
       request = BucketCreateRequest.new( **request_options )
-      response = request.submit( bucket: bucket, region: region, acl: acl )
+      response = request.submit( options, bucket: bucket, **kwargs )
 
       raise_if_error( response )
 

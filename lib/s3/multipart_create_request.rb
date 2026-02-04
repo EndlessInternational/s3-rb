@@ -1,15 +1,17 @@
 module S3
   class MultipartCreateRequest < Request
-    def submit( bucket:, key:, metadata: nil, content_type: nil, acl: nil, storage_class: nil )
+    def submit( options = nil, bucket:, key:, **kwargs )
       path = "/#{ bucket }/#{ Helpers.encode_key( key ) }"
       query = 'uploads='
 
-      headers = {}
-      headers[ 'Content-Type' ] = content_type if content_type
-      headers[ 'x-amz-acl' ] = acl if acl
-      headers[ 'x-amz-storage-class' ] = storage_class if storage_class
+      options = merge_options( options, kwargs, MultipartCreateOptions )
 
-      metadata&.each do | meta_key, value |
+      headers = {}
+      headers[ 'Content-Type' ] = options[ :content_type ] if options[ :content_type ]
+      headers[ 'x-amz-acl' ] = options[ :acl ] if options[ :acl ]
+      headers[ 'x-amz-storage-class' ] = options[ :storage_class ] if options[ :storage_class ]
+
+      options[ :metadata ]&.each do | meta_key, value |
         headers[ "x-amz-meta-#{ meta_key }" ] = value.to_s
       end
 

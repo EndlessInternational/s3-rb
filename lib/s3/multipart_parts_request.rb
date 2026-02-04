@@ -1,11 +1,13 @@
 module S3
   class MultipartPartsRequest < Request
-    def submit( bucket:, key:, upload_id:, part_number_marker: nil, max_parts: nil )
+    def submit( options = nil, bucket:, key:, upload_id:, **kwargs )
       path = "/#{ bucket }/#{ Helpers.encode_key( key ) }"
 
+      options = merge_options( options, kwargs, MultipartPartsOptions )
+
       params = { 'uploadId' => upload_id }
-      params[ 'part-number-marker' ] = part_number_marker.to_s if part_number_marker
-      params[ 'max-parts' ] = max_parts.to_s if max_parts
+      params[ 'part-number-marker' ] = options[ :part_number_marker ].to_s if options[ :part_number_marker ]
+      params[ 'max-parts' ] = options[ :max_parts ].to_s if options[ :max_parts ]
 
       query = Helpers.build_query_string( params )
 

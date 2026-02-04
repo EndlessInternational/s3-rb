@@ -1,13 +1,14 @@
 module S3
   class ObjectListRequest < Request
-    def submit( bucket:, prefix: nil, delimiter: nil, max_keys: nil,
-                continuation_token: nil, start_after: nil )
+    def submit( options = nil, bucket:, **kwargs )
+      options = merge_options( options, kwargs, ObjectListOptions )
+
       params = { 'list-type' => '2' }
-      params[ 'prefix' ] = prefix if prefix
-      params[ 'delimiter' ] = delimiter if delimiter
-      params[ 'max-keys' ] = max_keys.to_s if max_keys
-      params[ 'continuation-token' ] = continuation_token if continuation_token
-      params[ 'start-after' ] = start_after if start_after
+      params[ 'prefix' ] = options[ :prefix ] if options[ :prefix ]
+      params[ 'delimiter' ] = options[ :delimiter ] if options[ :delimiter ]
+      params[ 'max-keys' ] = options[ :max_keys ].to_s if options[ :max_keys ]
+      params[ 'continuation-token' ] = options[ :continuation_token ] if options[ :continuation_token ]
+      params[ 'start-after' ] = options[ :start_after ] if options[ :start_after ]
 
       query = Helpers.build_query_string( params )
 
